@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ysu.tablayout.TabLayout
+        android:id="@+id/base_tablayout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        app:tab_indicator_height="0dp"
+        android:layout_marginLeft="16dp"
+        app:mode="scrollable"
+        app:tab_text_color="#181818"
+        app:tab_text_size="16sp"
+        app:tab_text_selected_size="30sp"
+        app:tab_gravity="bottom"
+        app:tab_text_margin_right="16dp"
+        app:tab_height="40dp"
+        android:elevation="0.5dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"/>
+
+</LinearLayout>
